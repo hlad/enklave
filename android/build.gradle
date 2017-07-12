@@ -1,13 +1,16 @@
+Properties props = new Properties();
+props.load(new FileInputStream(file(rootProject.file("local.properties"))))
+
 android {
     dexOptions {
         javaMaxHeapSize "4g"
     }
     signingConfigs {
         config {
-            keyAlias 'enklave'
-            keyPassword '12345678'
-            storeFile file('/home/adrian/Android/Keystore/enklave.jks')
-            storePassword '12345678'
+	    keyAlias file(props["storeAlias"])
+	    keyPassword file(props["storePassword"])
+	    storeFile file(props["storeFile"])
+	    storePassword file(props["storePassword"])
         }
     }
     buildToolsVersion "23.0.3"
