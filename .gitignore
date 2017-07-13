@@ -70,3 +70,6 @@ build/
 Thumbs.db
 client_secret_473547758853-mtgp8i885un47644cat7salm3ldbj42d.apps.googleusercontent.com.json
 google-services.json
+
+## custom configs
+config.xml

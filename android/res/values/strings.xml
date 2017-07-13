@@ -12,9 +12,6 @@
     <string name="username">User Name</string>
     <string name="password">Password</string>
 
-    <string name="clientid">EeTst6oR0udDrcKUScROksiDKiBPdUvp8leTWVVO</string>
-    <string name="clientsecret">goGcpJ1QPiAoTTOQRIGya6cCau0TTNpcrpzKudHynfPvcmYHKuWh0IpH8vEB2ZHYVAt6qOKdNXQZkMP1yKUYYDXX5sEu8ACr9mthmgR9ytaDqoXindSbX568r45saSiN</string>
-    <string name="api_url">http://enklave-1720445391.us-west-2.elb.amazonaws.com</string>
     <string name="login_url">/o/token/</string>
     <string name="register_url">/users/register</string>
     <string name="convert_token">/auth/convert-token</string>
