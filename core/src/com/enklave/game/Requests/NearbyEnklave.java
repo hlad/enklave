@@ -5,6 +5,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Net;
 import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.net.HttpRequestBuilder;
+import com.enklave.game.Config;
 
 import org.json.JSONArray;
 
@@ -12,8 +13,8 @@ import org.json.JSONArray;
  * Created by adrian on 18.03.2016.
  */
 public class NearbyEnklave {
-    private String url = "http://enklave-1720445391.us-west-2.elb.amazonaws.com/";
-    private String enkNearby = "enklave/nearby/";
+    private String url = Config.API_URL;
+    private String enkNearby = "/enklave/nearby/";
 
     public NearbyEnklave() {
     }

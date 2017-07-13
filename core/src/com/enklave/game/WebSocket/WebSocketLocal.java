@@ -5,6 +5,7 @@ import com.enklave.game.Combat.InfoPlayer;
 import com.enklave.game.Combat.ListOfAttachers;
 import com.enklave.game.Combat.ListOfDefenders;
 import com.enklave.game.Combat.UpdateDisplayCombat;
+import com.enklave.game.Config;
 import com.enklave.game.Enklave.DescEnklave.InformationEnklave;
 import com.enklave.game.FontLabel.Font;
 import com.enklave.game.Profile.InformationProfile;
@@ -26,7 +27,7 @@ import java.util.TimerTask;
 
 
 public class WebSocketLocal implements InterfaceWebSocket {
-    private String url="ws://enklave-1720445391.us-west-2.elb.amazonaws.com:8888/ws/";
+    private String url= Config.API_URL_WS;
     private WebSocketClient webSocketClient;
     private boolean connected = false;
     private double referenceLatitude = 0.0,referenceLongitude = 0.0;

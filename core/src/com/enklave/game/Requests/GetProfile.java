@@ -6,13 +6,14 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Net;
 import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.net.HttpRequestBuilder;
+import com.enklave.game.Config;
 
 import org.json.JSONObject;
 
 
 public class GetProfile {
-    private String url = "http://enklave-1720445391.us-west-2.elb.amazonaws.com/";
-    private String prof = "user/profile/";
+    private String url = Config.API_URL;
+    private String prof = "/user/profile/";
     private InformationProfile profile;
 
     public GetProfile() {

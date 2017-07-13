@@ -1,5 +1,6 @@
 package com.enklave.game.Craft;
 
+import com.enklave.game.Config;
 import com.enklave.game.GameManager;
 import com.enklave.game.Profile.InformationProfile;
 import com.enklave.game.Screens.QueueDisplay;
@@ -15,7 +16,7 @@ import org.json.JSONObject;
 
 
 public class CreateBricks {
-    private String url = "http://enklave-1720445391.us-west-2.elb.amazonaws.com";
+    private String url = Config.API_URL;
     private String prof = "/crafting/brick/build/";
     private InformationProfile informationProfile;
     private QueueDisplay queueDisplay = QueueDisplay.getInstance();

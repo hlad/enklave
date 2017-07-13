@@ -1,5 +1,6 @@
 package com.enklave.game.Enklave.DescEnklave;
 
+import com.enklave.game.Config;
 import com.enklave.game.Enklave.ListEnklaves;
 import com.enklave.game.LoadResursed.ManagerAssets;
 import com.badlogic.gdx.Gdx;
@@ -16,7 +17,7 @@ import java.util.HashMap;
  * Created by adrian on 27.04.2016.
  */
 public class GetEnklaveDetails {
-    private String url = "http://enklave-1720445391.us-west-2.elb.amazonaws.com";
+    private String url = Config.API_URL;
     private String prof = "/enklave/details/";
     private InformationEnklave enklave;
 

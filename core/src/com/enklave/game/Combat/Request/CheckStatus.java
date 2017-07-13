@@ -8,6 +8,7 @@ import com.badlogic.gdx.net.HttpRequestBuilder;
 import com.enklave.game.Combat.InfoPlayer;
 import com.enklave.game.Combat.ListOfAttachers;
 import com.enklave.game.Combat.ListOfDefenders;
+import com.enklave.game.Config;
 import com.enklave.game.Enklave.DescEnklave.InformationEnklave;
 import com.enklave.game.LoadResursed.ManagerAssets;
 import com.enklave.game.Profile.InformationProfile;
@@ -21,7 +22,7 @@ import java.util.HashMap;
  * Created by adrian on 06.06.2016.
  */
 public class CheckStatus {
-    private String url = "http://enklave-1720445391.us-west-2.elb.amazonaws.com/";
+    private String url = Config.API_URL;
     private String prof = "/combat/status/enklave/";
     private ListOfAttachers listOfAttachers;
     private ListOfDefenders listOfDefenders;

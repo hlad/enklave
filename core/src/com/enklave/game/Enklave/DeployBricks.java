@@ -1,5 +1,6 @@
 package com.enklave.game.Enklave;
 
+import com.enklave.game.Config;
 import com.enklave.game.Craft.QueueBuildCraft;
 import com.enklave.game.Enklave.DescEnklave.InformationEnklave;
 import com.enklave.game.GameManager;
@@ -14,7 +15,7 @@ import com.badlogic.gdx.utils.Timer;
 import org.json.JSONObject;
 
 public class DeployBricks {
-    private String url = "http://enklave-1720445391.us-west-2.elb.amazonaws.com/";
+    private String url = Config.API_URL;
     private String join = "/crafting/brick/place/";
     private InformationProfile informationProfile;
     private QueueDisplay queueDisplay = QueueDisplay.getInstance();

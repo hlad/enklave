@@ -1,0 +1,6 @@
+package com.enklave.game;
+
+public final class Config {
+    public static final String API_URL = "";
+    public static final String API_URL_WS = "";
+}

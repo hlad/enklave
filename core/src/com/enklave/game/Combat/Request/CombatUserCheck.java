@@ -1,5 +1,6 @@
 package com.enklave.game.Combat.Request;
 
+import com.enklave.game.Config;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Net;
 import com.badlogic.gdx.Preferences;
@@ -14,7 +15,7 @@ import org.json.JSONObject;
  * Created by adrian on 13.06.2016.
  */
 public class CombatUserCheck {
-    private String url = "http://enklave-1720445391.us-west-2.elb.amazonaws.com/";
+    private String url = Config.API_URL;
     private String prof = "/combat/user/status/";
 
     public CombatUserCheck() {

@@ -4,6 +4,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Net;
 import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.net.HttpRequestBuilder;
+import com.enklave.game.Config;
 
 import org.json.JSONObject;
 
@@ -11,7 +12,7 @@ import org.json.JSONObject;
  * Created by adrian on 06.06.2016.
  */
 public class UnsubscribeCombat {
-    private String url = "http://enklave-1720445391.us-west-2.elb.amazonaws.com/";
+    private String url = Config.API_URL;
     private String prof = "/combat/unsubscribe/enklave/";
 
     public UnsubscribeCombat() {
