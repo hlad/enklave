@@ -7,10 +7,10 @@ android {
     }
     signingConfigs {
         config {
-	    keyAlias file(props["storeAlias"])
-	    keyPassword file(props["storePassword"])
+	    keyAlias props["keyAlias"]
+	    keyPassword props["keyPassword"]
 	    storeFile file(props["storeFile"])
-	    storePassword file(props["storePassword"])
+	    storePassword props["storePassword"]
         }
     }
     buildToolsVersion "23.0.3"
