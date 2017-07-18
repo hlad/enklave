@@ -67,7 +67,7 @@ public class WebSocketLocal implements InterfaceWebSocket {
                     try {
                         date = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ").parse(sdate);
                     } catch (ParseException e) {
-                        Gdx.app.log("eroare","  "+e);
+                        Gdx.app.log("error","  "+e);
                         e.printStackTrace();
                     }
                     ScreenChat.getInstance().addmessage(json.getString("message"),json.getString("from_user"),date);
@@ -78,7 +78,7 @@ public class WebSocketLocal implements InterfaceWebSocket {
                     try {
                         date = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ").parse(sdate);
                     } catch (ParseException e) {
-                        Gdx.app.log("eroare","  "+e);
+                        Gdx.app.log("error","  "+e);
                         e.printStackTrace();
                     }
                     ScreenChat.getInstance().addmesschatpublic(json.getString("message"),ScreenChat.getInstance().detcolor(json.getInt("faction_id")),json.getString("from_user"),date);

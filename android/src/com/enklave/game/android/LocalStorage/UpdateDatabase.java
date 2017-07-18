@@ -8,7 +8,7 @@ import android.os.AsyncTask;
 import android.util.Log;
 
 import com.enklave.game.MapsService.MapPixmap;
-import com.enklave.game.android.Activity.Logare;
+import com.enklave.game.android.Activity.Login;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Pixmap;
@@ -120,7 +120,7 @@ public class UpdateDatabase extends AsyncTask<String,Integer,Void> {
             builder.setMessage("CANNOT CONNECT TO SERVER!\n PLEASE CHECK YOUR INTERNET\n CONNECTION, THEN RESTART THE GAME").setNeutralButton("RESTART", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
-                    mcontext.startActivity(new Intent(mcontext,Logare.class));
+                    mcontext.startActivity(new Intent(mcontext,Login.class));
                 }
             });
             builder.create().show();
@@ -133,7 +133,7 @@ public class UpdateDatabase extends AsyncTask<String,Integer,Void> {
             builder.setMessage("CANNOT CONNECT TO SERVER!\n PLEASE CHECK YOUR INTERNET\n CONNECTION, THEN RESTART THE GAME").setNeutralButton("RESTART", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
-                    mcontext.startActivity(new Intent(mcontext,Logare.class));
+                    mcontext.startActivity(new Intent(mcontext,Login.class));
                 }
             });
             builder.create().show();

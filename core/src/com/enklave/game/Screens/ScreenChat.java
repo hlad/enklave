@@ -312,7 +312,7 @@ public class ScreenChat {
             grchatfaction.addActor(labelTest1);
         } catch (ParseException e) {
             e.printStackTrace();
-            Gdx.app.log("eroare","intra");
+            Gdx.app.log("error","intra");
         }
         sp = new ScrollPane(grchatfaction);
         sp.layout();
@@ -338,7 +338,7 @@ public class ScreenChat {
             grchatlocation.addActor(labelTest);
         } catch (ParseException e) {
             e.printStackTrace();
-            Gdx.app.log("eroare","intra");
+            Gdx.app.log("error","intra");
         }
         scrollchatpublic = new ScrollPane(grchatlocation);
         scrollchatpublic.layout();

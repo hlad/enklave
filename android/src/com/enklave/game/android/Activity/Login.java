@@ -37,7 +37,7 @@ import java.io.IOException;
 
 import static android.widget.Toast.LENGTH_LONG;
 
-public class Logare extends Activity {
+public class Login extends Activity {
     private String st_access = "accesstoken";
     private LoginFacebook fb;
     private LoginGoogle googleLog;

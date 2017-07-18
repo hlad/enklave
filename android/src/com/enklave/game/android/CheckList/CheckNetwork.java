@@ -7,7 +7,7 @@ import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
-import com.enklave.game.android.Activity.Logare;
+import com.enklave.game.android.Activity.Login;
 
 
 public class CheckNetwork {
@@ -19,7 +19,7 @@ public class CheckNetwork {
             builder.setMessage("CANNOT CONNECT TO SERVER!\n PLEASE CHECK YOUR INTERNET\n CONNECTION, THEN RESTART THE GAME").setNeutralButton("RESTART", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
-                    context.startActivity(new Intent(context, Logare.class));
+                    context.startActivity(new Intent(context, Login.class));
                     System.exit(0);
                 }
             }).setCancelable(false);
@@ -33,7 +33,7 @@ public class CheckNetwork {
                 builder.setMessage("CANNOT CONNECT TO SERVER!\n PLEASE CHECK YOUR INTERNET\n CONNECTION, THEN RESTART THE GAME").setNeutralButton("RESTART", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        context.startActivity(new Intent(context,Logare.class));
+                        context.startActivity(new Intent(context,Login.class));
                         System.exit(0);
                     }
                 }).setCancelable(false);

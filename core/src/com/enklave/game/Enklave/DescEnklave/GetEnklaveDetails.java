@@ -65,9 +65,9 @@ public class GetEnklaveDetails {
                     enklave.setEnergyBrickfull(json.getInt("brick_full"));
                     enklave.setEnergyfullshield(json.getInt("shield_full"));
                     manager.getAssertEnklaveScreen().setIsupdate(true);
-                    Gdx.app.log("information enklave ", "succes  " + json);
+                    Gdx.app.log("information enklave ", "success  " + json);
                 }else{
-                    Gdx.app.log("eroare"+httpResponse.getStatus().getStatusCode(),"meassajul :"+httpResponse.getResultAsString());
+                    Gdx.app.log("error"+httpResponse.getStatus().getStatusCode(),"message :"+httpResponse.getResultAsString());
                     new GetEnklaveDetails().makeRequest(ListEnklaves.getInstance().get(idEnklave).id, manager);
                 }
             }
